@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>blah</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://localhost:3000/style.css">
+
+</head>
+<body>
+	<nav>
+		<div class= "one col-sm-8">
+			<form action="/" method="GET">
+				<button>Home</button>
+			</form>
+			<form action="/letters/new" method="GET">
+				<button>Create Mail</button>
+			</form>
+			<form action="/letters" method="GET">
+				<button>Mail History</button>
+			</form>
+		</div>
+		<div class="one col-sm-4">
+			<form action='/letters/show' method="POST">
+				<input type="text" name="id" placeholder="Search By ID">
+				<button>Click</button>
+			</form>
+		</div>
+	</nav>
+
+
+	<div class="left col-sm-2"></div>
+	<div class="container col-sm-8">
+		<div class="logo"></div><br><br>
+		<h1>Please provide information to POST your mail</h1><br><br>
+
+			<form action="/letter" method="POST">
+				<label for="name-form">Name</label>
+				<input type="text" name="name" placeholder="enter first name / last name" id="name-form"><br>
+				
+				<label for="address-form">Address</label>
+				<input type="text" name="address" placeholder="Street address" id="address-form">
+				
+				<input type="text" name="city" placeholder="City">
+				<input type="text" name="state" placeholder="State">
+				<input type="text" name="zip" placeholder="Zip Code"><br>
+				
+				<label for="date-form">Date</label>
+				<input type="text" name="date" placeholder="mm/dd/yyyy" id="date-form"><br>
+				
+				<textarea rows="4" cols="50" name="text"></textarea><br><br>
+				
+				<button>Submit</button>
+
+			</form>
+	</div>
+
+	<div class="right col-sm-2"></div>
+
+	</body>
+</html>

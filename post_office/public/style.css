@@ -1,0 +1,48 @@
+form{
+	display:inline-block;
+}
+
+.container{
+	border: 2px solid white;
+	position: relative;
+	top: 150px;
+}
+
+.logo{
+	height: 55px;
+	background-image: url('postlogo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 50px;
+}
+
+.one{
+	background: #6F6F77;
+	opacity: .7;
+}
+
+body{
+	background-image: url('background.jpg');
+}
+
+.welcome{
+	font-size: 60px;
+	color: #000A1F;
+	font-family: helvetica;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	font-size: 40px;
+}
+
+.list{
+	border: 2px dashed white;
+}
+
+.text{
+	font-size: 25px;
+}
+

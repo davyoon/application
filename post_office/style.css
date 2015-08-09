@@ -1,0 +1,15 @@
+form{
+	display:inline-block;
+}
+
+.one{
+	background: blue;
+}
+
+.two{
+	background: red;
+}
+
+.three{
+	background: yellow;
+}

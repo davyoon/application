@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>blah</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style>
+		form{
+			display:inline-block;
+		}
+	</style>
+
+</head>
+<body>
+	<nav>
+		<div class= "one col-sm-8">
+			<form action="/" method="GET">
+				<button>Home</button>
+			</form>
+			<form action="/letters/new" method="GET">
+				<button>Create Mail</button>
+			</form>
+			<form action="/letters" method="GET">
+				<button>Mail History</button>
+			</form>
+		</div>
+		<div class="one col-sm-4">
+			<form action="/letters/:id" method="GET">
+				<input type="text" name="id" placeholder="Search By ID">
+				<button>Click</button>
+			</form>
+		</div>
+	</nav>
+	
+
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
